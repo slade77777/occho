@@ -19,6 +19,7 @@ class CreateOrderTable extends Migration
             $table->string('order_description')->nullable();
             $table->string('user_email')->nullable();
             $table->string('user_name')->nullable();
+            $table->string('user_phone')->nullable();
         });
     }
 

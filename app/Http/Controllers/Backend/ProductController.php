@@ -56,6 +56,8 @@ class ProductController extends Controller
         return rand(10000, 10000000).date("Ymd") . '_' . $name;
     }
 
+
+
     public function edit($id)
     {
         $product = DB::table('products')->find($id);

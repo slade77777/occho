@@ -33,9 +33,9 @@ class createDocRequest extends Request
     public function messages()
     {
         return [
-            'name.required' => 'thieu ten san pham',
-            'type.mimes' => 'dinh dang file khong hop le',
-            'type.required' => 'thieu tai lieu'
+            'name.required' => 'thiếu tên sản phẩm',
+            'type.mimes' => 'định dạng file không hợp lệ',
+            'type.required' => 'thiếu tài liệu'
         ];
     }
 }

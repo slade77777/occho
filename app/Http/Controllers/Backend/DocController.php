@@ -37,7 +37,7 @@ class DocController extends Controller
             ]
         );
         return redirect()->route('admin.document')
-            ->withFlashSuccess('tao thanh cong');
+            ->withFlashSuccess('tạo thành công');
     }
 
     private function _saveImage($request)
@@ -58,7 +58,7 @@ class DocController extends Controller
     {
         DB::table('documents')->where('id', $id)->delete();
         return redirect()->route('admin.document')
-            ->withFlashSuccess('xoa thanh cong');
+            ->withFlashSuccess('xoá thành công');
     }
 
 

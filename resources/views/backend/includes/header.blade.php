@@ -8,7 +8,7 @@
 
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg">
-            {{ app_name() }}
+            nCreation
         </span>
     </a>
 

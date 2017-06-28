@@ -39,7 +39,7 @@ class ProductController extends Controller
             ]
         );
         return redirect()->route('admin.product')
-            ->withFlashSuccess('tao thanh cong');
+            ->withFlashSuccess('tạo thành công');
     }
 
     private function _saveImage($request)
@@ -84,7 +84,7 @@ class ProductController extends Controller
                 ]);
         }
         return redirect()->route('admin.product')
-            ->withFlashSuccess('chinh sua thanh cong');
+            ->withFlashSuccess('chỉnh sửa thành công');
 
     }
 
@@ -92,6 +92,6 @@ class ProductController extends Controller
     {
         DB::table('products')->where('id', $id)->delete();
         return redirect()->route('admin.product')
-            ->withFlashSuccess('xoa thanh cong');
+            ->withFlashSuccess('xoá thành công');
     }
 }

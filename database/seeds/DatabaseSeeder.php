@@ -16,10 +16,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-
         $this->call(AccessTableSeeder::class);
         $this->call(HistoryTypeTableSeeder::class);
-
+        $this->call(ProductTableSeeder::class);
+        $this->call(DocumentTableSeeder::class);
         Model::reguard();
     }
 }

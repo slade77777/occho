@@ -33,9 +33,9 @@ class createProductRequest extends Request
     public function messages()
     {
         return [
-            'product_name.required' => 'thieu ten san pham',
-            'product_picture.required' => 'thieu anh san pham',
-            'product_description.required' => 'thieu mo ta san pham',
+            'product_name.required' => 'thiếu tên sản phẩm',
+            'product_picture.required' => 'thiếu ảnh sản phẩm',
+            'product_description.required' => 'thiếu mô tả sản phẩm',
 
         ];
     }

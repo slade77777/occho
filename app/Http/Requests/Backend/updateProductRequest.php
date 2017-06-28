@@ -33,8 +33,8 @@ class updateProductRequest extends Request
     public function messages()
     {
         return [
-            'product_name.required' => 'thieu ten san pham',
-            'product_description.required' => 'thieu mo ta san pham',
+            'product_name.required' => 'thiếu tên sản phẩm',
+            'product_description.required' => 'thiếu mô tả sản phẩm',
 
         ];
     }

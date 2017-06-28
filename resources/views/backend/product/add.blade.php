@@ -5,12 +5,12 @@
 
     <div class="box box-default">
         <div class="box-header with-border">
-            <h3 class="box-title">them san pham</h3>
+            <h3 class="box-title">thêm sản phẩm</h3>
         </div><!-- /.box-header -->
 
         <div class="box-body" >
             <div class="col-lg-2">
-                <b>ten san pham</b>
+                <b>tên sản phẩm</b>
             </div>
             <div class="col-lg-8 form-group">
                 {{ Form::text('product_name', null, ['class' => 'form-control']) }}
@@ -19,7 +19,7 @@
 
         <div class="box-body">
             <div class="col-lg-2">
-                <b>anh san pham</b>
+                <b>ảnh sản phẩm</b>
             </div>
 
             <div class="col-lg-2 form-group">
@@ -29,7 +29,7 @@
 
         <div class="box-body">
             <div class="form-group">
-                {{ Form::label('product_description', 'mo ta san pham', ['class' => 'col-lg-12 form-label']) }}
+                {{ Form::label('product_description', 'mô tả sản phẩm', ['class' => 'col-lg-12 form-label']) }}
 
                 <div class="col-lg-12">
                     {{ Form::textarea('product_description', null, ['class' => 'form-control information-content']) }}
@@ -39,7 +39,7 @@
             <!-- Buttons -->
             <div class="clearfix"></div>
             <div class="pull-left">
-                {{ Form::submit('tao moi', ['class' => 'btn btn-success']) }}
+                {{ Form::submit('tạo mới', ['class' => 'btn btn-success']) }}
             </div><!--pull-left-->
 
         </div><!-- /.box-body -->

@@ -5,6 +5,13 @@
  * All route names are prefixed with 'frontend.'.
  */
 Route::get('/', 'FrontendController@index')->name('index');
+Route::get('/home','FrontendController@index');
+Route::get('/service','FrontendController@service');
+Route::get('/about','FrontendController@about');
+Route::get('/single/{id}','FrontendController@single');
+
+Route::post('/send_order','FrontendController@send_order');
+
 Route::get('macros', 'FrontendController@macros')->name('macros');
 
 /*

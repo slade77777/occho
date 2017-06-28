@@ -1,16 +1,16 @@
 @extends('backend.layouts.app')
 
 @section('content')
-    {{ Form::open(['route' => 'admin.product.create', 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'post',  'enctype' => 'multipart/form-data']) }}
+    {{ Form::open(['route' => 'admin.order.create', 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'post',  'enctype' => 'multipart/form-data']) }}
 
     <div class="box box-default">
         <div class="box-header with-border">
-            <h3 class="box-title">them san pham</h3>
+            <h3 class="box-title">thêm sản phẩm</h3>
         </div><!-- /.box-header -->
 
         <div class="box-body" >
             <div class="col-lg-2">
-                <b>ten nguoi mua</b>
+                <b>tên người mua</b>
             </div>
             <div class="col-lg-8 form-group">
                 {{ Form::text('user_name', null, ['class' => 'form-control']) }}
@@ -19,7 +19,7 @@
 
         <div class="box-body" >
             <div class="col-lg-2">
-                <b>chon san pham</b>
+                <b>chọn sản phẩm</b>
             </div>
             <div class="col-lg-10 form-group">
                 {{ Form::select('product_id', $product, '') }}
@@ -28,7 +28,7 @@
 
         <div class="box-body" >
             <div class="col-lg-2">
-                <b>so dien thoai</b>
+                <b>số điện thoại</b>
             </div>
             <div class="col-lg-8 form-group">
                 {{ Form::text('user_phone', null, ['class' => 'form-control']) }}
@@ -37,7 +37,7 @@
 
         <div class="box-body" >
             <div class="col-lg-2">
-                <b>dia chi mail</b>
+                <b>địa chỉ email</b>
             </div>
             <div class="col-lg-8 form-group">
                 {{ Form::email('user_email', null, ['class' => 'form-control']) }}
@@ -46,7 +46,7 @@
 
         <div class="box-body">
             <div class="form-group">
-                {{ Form::label('order_description', 'mo ta hoa don', ['class' => 'col-lg-12 form-label']) }}
+                {{ Form::label('order_description', 'mô tả hoá đơn', ['class' => 'col-lg-12 form-label']) }}
 
                 <div class="col-lg-12">
                     {{ Form::textarea('order_description', null, ['class' => 'form-control information-content']) }}
@@ -56,7 +56,7 @@
             <!-- Buttons -->
             <div class="clearfix"></div>
             <div class="pull-left">
-                {{ Form::submit('tao moi', ['class' => 'btn btn-success']) }}
+                {{ Form::submit('tạo mới', ['class' => 'btn btn-success']) }}
             </div><!--pull-left-->
 
         </div><!-- /.box-body -->

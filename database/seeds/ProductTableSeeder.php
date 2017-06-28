@@ -12,7 +12,7 @@ class ProductTableSeeder extends Seeder
     public function run()
     {
         DB::table('products')->insert([
-            ['product_name' => 'Hệ Thống chặn spam mail', 'product_picture' => 'product1.jpg', 'product_description' => 'Spam là một trong những thách thức lớn nhất hiện nay mà khách hàng và nhà cung cấp dịch vụ phải đối phó. Bài viết này trình bày các đặc điểm, cách phát tán của spam và các phương pháp lọc, phòng chống.
+            ['product_name' => 'Hệ Thống chặn spam mail', 'product_picture' => 'rsz_product1.jpg', 'product_description' => 'Spam là một trong những thách thức lớn nhất hiện nay mà khách hàng và nhà cung cấp dịch vụ phải đối phó. Bài viết này trình bày các đặc điểm, cách phát tán của spam và các phương pháp lọc, phòng chống.
 SPAM là một trong những thách thức lớn nhất hiện nay mà khách hàng và các nhà cung cấp dịch vụ phải đối phó. Spam đã trở thành một hình thức quảng cáo chuyên nghiệp, phát tán virus, ăn cắp thông tin... với nhiều thủ đoạn và mánh khóe cực kỳ tinh vi. Người dùng sẽ phải mất khá nhiều thời gian để xóa những email “không mời mà đến”, nếu vô ý còn có thể bị nhiễm virus, trojan, spyware ... và nặng nề hơn là mất thông tin như thẻ tín dụng, tài khoản ngân hàng qua các email dạng phishing. Phần một của bài viết này sẽ trình bày về đặc điểm của spam, cách phát tán và tác hại của spam. Phần hai của bài viết sẽ trình bày về các phương pháp lọc spam và cách phòng chống.
 
 Spam (hay spam email) là thư điện tử quảng cáo hay là thư được gửi mà không có sự yêu cầu từ người nhận. Spam thường là những email vô hại và được gửi tới một số lượng lớn người nhận khác nhau. Spam được gửi với số lượng lớn có thể làm đầy hòm thư của người nhận, nên họ không nhận được các thư mới. Ngoài ra spam còn chiếm dụng băng thông, có thể gây tắc nghẽn đường truyền. Một số loại spam còn chứa nội dung lừa đảo, nhằm mục đích lừa người dùng cung cấp các thông tin cá nhân như mã số thẻ tín dụng, mật khẩu...
@@ -22,7 +22,7 @@ Spam (hay spam email) là thư điện tử quảng cáo hay là thư được g
 Spam có đặc điểm là không tốn nhiều chi phí khi gửi đến một số lượng người nhận lớn, vì thế các spammer không cần sàng lọc các đối tượng nhận thư được gửi trùng lặp nhiều lần tới cùng một địa chỉ người nhận.
 
 Hệ thống là một ứng dụng cho phép bạn cấu hình lọc spam để ngăn chặn những email không mong muốn. Nó giúp bạn hạn chế tối đa số spam bằng cách tạo bộ lọc, tạo danh sách đến... ngăn chặn các thư nghi là spam, nghi chứa virut. Chương trình còn cho phép bạn gửi email hàng loại tới một danh sách các địa chỉ mail khác nhau. Ngoài ra, bạn có thể chỉnh sửa, hiển thị bản đính kèm, mã hóa SSL... trong các email gửi đi hoặc gửi đến.'],
-            ['product_name' => 'Website Đại Học Hà Nội', 'product_picture' => 'product2.jpg', 'product_description' => 'Thiết kế web trường học cần thể hiện tốt nhất các nhân tố sau:
+            ['product_name' => 'Website Đại Học Hà Nội', 'product_picture' => 'rsz_product2.jpg', 'product_description' => 'Thiết kế web trường học cần thể hiện tốt nhất các nhân tố sau:
 •	Màu sắc tươi sáng, vui tươi, năng động và trẻ trung.
 •	Hình ảnh đẹp, tươi sáng, hồn nhiên và mang tính giáo dục.
 •	Nội dung website phải cô đọng, súc tích và giàu biểu cảm.
@@ -55,7 +55,7 @@ Gallery ảnh – Nơi đăng tải những hình ảnh về hoạt động ho�
 7	Video	Cập nhật video hiển trị trên trang chủ.
 8	Quảng Cáo	Quản lý các hình ảnh quảng cáo trên trang. Kích thước các quảng cáo sẽ được thiết kế theo chuẩn thế giới, Trong mục này, người quản trị chỉ việc cập nhật hình ảnh quảng cáo lên trang. Đối với quảng cáo, hệ thống website được xây dựng sẽ hỗ trợ hầu hết phần lớn các chuẩn định dạng về hình ảnh ( jpg, jpeg, png, gif, swf … )
 10	Liên Hệ	Quản lý các thông tin liên hệ được người truy cập gửi qua form liên hệ trên trang chủ. Mội thông tin gửi qua form này sẽ được hiển thị tại đây'],
-            ['product_name' => 'Viện Công Nghệ Giáo Dục', 'product_picture' => 'product3.jpg', 'product_description' => 'Thiết kế web trường học cần thể hiện tốt nhất các nhân tố sau:
+            ['product_name' => 'Viện Công Nghệ Giáo Dục', 'product_picture' => 'rsz_product3.jpg', 'product_description' => 'Thiết kế web trường học cần thể hiện tốt nhất các nhân tố sau:
 •	Màu sắc tươi sáng, vui tươi, năng động và trẻ trung.
 •	Hình ảnh đẹp, tươi sáng, hồn nhiên và mang tính giáo dục.
 •	Nội dung website phải cô đọng, súc tích và giàu biểu cảm.
@@ -88,7 +88,7 @@ Gallery ảnh – Nơi đăng tải những hình ảnh về hoạt động ho�
 7	Video	Cập nhật video hiển trị trên trang chủ.
 8	Quảng Cáo	Quản lý các hình ảnh quảng cáo trên trang. Kích thước các quảng cáo sẽ được thiết kế theo chuẩn thế giới, Trong mục này, người quản trị chỉ việc cập nhật hình ảnh quảng cáo lên trang. Đối với quảng cáo, hệ thống website được xây dựng sẽ hỗ trợ hầu hết phần lớn các chuẩn định dạng về hình ảnh ( jpg, jpeg, png, gif, swf … )
 10	Liên Hệ	Quản lý các thông tin liên hệ được người truy cập gửi qua form liên hệ trên trang chủ. Mội thông tin gửi qua form này sẽ được hiển thị tại đây'],
-            ['product_name' => 'Hệ Thống Website Du Lịch Becker Travel', 'product_picture' => 'product4.jpg', 'product_description' => 'Với hơn nhiều năm kinh nghiệm Thiết kế các Website Du Lịch lớn và nhỏ trong và ngoài nước. Chúng tôi - OneOffice tự hàng mang đến bạn dịch vụ thiết kế web du lịch hàng đầu với rất nhiều tính năng chuyên biệt của ngành du lịch,
+            ['product_name' => 'Hệ Thống Website Du Lịch Becker Travel', 'product_picture' => 'rsz_product4.jpg', 'product_description' => 'Với hơn nhiều năm kinh nghiệm Thiết kế các Website Du Lịch lớn và nhỏ trong và ngoài nước. Chúng tôi - OneOffice tự hàng mang đến bạn dịch vụ thiết kế web du lịch hàng đầu với rất nhiều tính năng chuyên biệt của ngành du lịch,
 Thật dễ dàng, tiện lợi biết bao khi bạn muốn di du lịch và chỉ cần ở nhà cũng có thể tìm thấy các thông tin về chuyến du lịch mà bạn mong muốn cũng như đặt chỗ ngay tại nhà. Mọi thao tác trên đều có thể thực hiện qua 1 website.
  
 Vì thế nếu bạn đang kinh doanh về lĩnh vực Du lịch - Travel thì hãy đừng chần chờ mà trang bị cho mình một website chuyên nghiệp về hình thức lẩn tính năng. Chúng tôi OneOffice ở đây để cung cấp cho bạn dịch vụ thiết kế website Du lịch tốt nhất.
@@ -233,7 +233,7 @@ i.Công nghệ thiết kế Website Nhà Hàng cần biết:
 - SEO Google
 - Facebook Panpage
 - Google +, Twitter'],
-            ['product_name' => 'Công Ty Viễn Thông GTEL', 'product_picture' => 'product5.jpg', 'product_description' => 'Công ty Cổ phần Viễn Thông Di Động Toàn Cầu (Gtel Mobile JSC.) được thành lập ngày 8/7/2008, dưới hình thức một công ty liên doanh giữa hai cổ đông - Tổng Công ty viễn thông Toàn cầu (GTel Corp) và Tập đoàn VimpelCom (Liên bang Nga). Do thay đổi trong chiến lược kinh doanh theo thỏa thuận của các cổ đông, đồng thời được sự phê duyệt của Chính Phủ cũng như các Cơ quan trung ương, tháng 4/2012, phía Vimpelcom  đã chuyển giao toàn bộ cổ phần của mình trong liên doanh cho phía Việt Nam, qua đó đưa GTel Mobile JSC chính thức trở thành doanh nghiệp viễn thông 100% vốn trong nước, bước sang một giai đoạn mới phát triển trên thị trường viễn thông Việt Nam.
+            ['product_name' => 'Công Ty Viễn Thông GTEL', 'product_picture' => 'rsz_product5.jpg', 'product_description' => 'Công ty Cổ phần Viễn Thông Di Động Toàn Cầu (Gtel Mobile JSC.) được thành lập ngày 8/7/2008, dưới hình thức một công ty liên doanh giữa hai cổ đông - Tổng Công ty viễn thông Toàn cầu (GTel Corp) và Tập đoàn VimpelCom (Liên bang Nga). Do thay đổi trong chiến lược kinh doanh theo thỏa thuận của các cổ đông, đồng thời được sự phê duyệt của Chính Phủ cũng như các Cơ quan trung ương, tháng 4/2012, phía Vimpelcom  đã chuyển giao toàn bộ cổ phần của mình trong liên doanh cho phía Việt Nam, qua đó đưa GTel Mobile JSC chính thức trở thành doanh nghiệp viễn thông 100% vốn trong nước, bước sang một giai đoạn mới phát triển trên thị trường viễn thông Việt Nam.
 GTel Mobile JSC là nhà cung cấp và khai thác các dịch vụ viễn thông di động trên nền tảng công nghệ GSM/EDGE. Để triển khai hệ thống mạng viễn thông di động của mình, GTEL Mobile JSC đã và đang hợp tác với rất nhiều tập đoàn viễn thông hàng đầu thế giới như  Alcatel Lucent, Ericsson, Huawei, Comverse, IBM, ..qua đó xây dựng được các hệ thống thiết bị mạng của Công ty thuộc hàng tiên tiến nhất trên thế giới.
 Cho đến tháng 8/2012, GTel Mobile JSC khai thác và sử dụng thương hiệu BeelineVN tại thị trường viễn thông Việt Nam. Tháng 9/2012, GTel Mobile JSC công bố và chính thức tái cung cấp dịch vụ dưới thương hiệu mới Gmobile thay thế cho thương hiệu BeelineVN  
 Đồng hành với thương hiệu mới Gmobile là khẩu hiệu “Nghĩ mới – Làm mới”.
@@ -261,7 +261,7 @@ Tiêu chuẩn công việc của Nhân viên quản trị website bao gồm: b�
 6. Am hiểu các phương pháp truyền thông, giới thiệu sản phẩm, khảo sát và thu thập thông tin
 7. Sử dụng thành thạo tin học văn phòng (word, excel, powerpoint, thiết kế: photoshop, CorelDraw…)
 Có khả năng viết bài và phân tích, tổng hợp thông tin, nhanh nhạy cập nhật các cách tiếp cận mới đối với thị trường, khách hàng'],
-            ['product_name' => 'Website Sở GDĐT Cao Bằng', 'product_picture' => 'product6.jpg', 'product_description' => 'Mô tả chi tiết chức năng thiết kế website giáo dục :
+            ['product_name' => 'Website Sở GDĐT Cao Bằng', 'product_picture' => 'rsz_product6.jpg', 'product_description' => 'Mô tả chi tiết chức năng thiết kế website giáo dục :
 – website giáo dục được thiết kế theo các Modul như :
     + Trang chủ
     + Page các khóa học, chương trình đào tạo hoặc page cho các dịch vụ kèm theo
@@ -306,7 +306,7 @@ Phần Quản Trị:
 •	Cho phép lựa chọn hiển thị 5 tin liên quan gần nhất
 Ngoài ra còn các Modul khác như : Phản hồi của học viên, Hỏi đáp thắc mắc offline, Hỏi đáp trực tuyến, bảo mật….
 Thiết kế website wordpress phù hợp với trang website chuyên về đào tạo khóa học tại trung tâm như trung tâm tiếng anh, tiếng nhật… hoặc các trường đại học có các chương trình đào tạo ngoài ngành như đào tạo thạc sỹ, tiến sỹ, văn bằng 2….. Với mỗi thiết kế website về giáo dục đều mang một phong cách riêng và độc đáo phù hợp với chương trình đào tạo của trường học hay trung tâm.'],
-            ['product_name' => 'Flying SuperKids Đan Mạch', 'product_picture' => 'product7.jpg', 'product_description' => 'Thiết kế web trường học cần thể hiện tốt nhất các nhân tố sau:
+            ['product_name' => 'Flying SuperKids Đan Mạch', 'product_picture' => 'rsz_product7.jpg', 'product_description' => 'Thiết kế web trường học cần thể hiện tốt nhất các nhân tố sau:
 •	Màu sắc tươi sáng, vui tươi, năng động và trẻ trung.
 •	Hình ảnh đẹp, tươi sáng, hồn nhiên và mang tính giáo dục.
 •	Nội dung website phải cô đọng, súc tích và giàu biểu cảm.
@@ -339,7 +339,7 @@ Gallery ảnh – Nơi đăng tải những hình ảnh về hoạt động ho�
 7	Video	Cập nhật video hiển trị trên trang chủ.
 8	Quảng Cáo	Quản lý các hình ảnh quảng cáo trên trang. Kích thước các quảng cáo sẽ được thiết kế theo chuẩn thế giới, Trong mục này, người quản trị chỉ việc cập nhật hình ảnh quảng cáo lên trang. Đối với quảng cáo, hệ thống website được xây dựng sẽ hỗ trợ hầu hết phần lớn các chuẩn định dạng về hình ảnh ( jpg, jpeg, png, gif, swf … )
 10	Liên Hệ	Quản lý các thông tin liên hệ được người truy cập gửi qua form liên hệ trên trang chủ. Mội thông tin gửi qua form này sẽ được hiển thị tại đây'],
-            ['product_name' => 'Ban Bảo Vệ CSSK Trung Ương Đảng', 'product_picture' => 'product8.jpg', 'product_description' => 'Mô tả chi tiết chức năng thiết kế website giáo dục :
+            ['product_name' => 'Ban Bảo Vệ CSSK Trung Ương Đảng', 'product_picture' => 'rsz_product8.jpg', 'product_description' => 'Mô tả chi tiết chức năng thiết kế website giáo dục :
 – website giáo dục được thiết kế theo các Modul như :
     + Trang chủ
     + Page các khóa học, chương trình đào tạo hoặc page cho các dịch vụ kèm theo
@@ -384,7 +384,7 @@ Phần Quản Trị:
 •	Cho phép lựa chọn hiển thị 5 tin liên quan gần nhất
 Ngoài ra còn các Modul khác như : Phản hồi của học viên, Hỏi đáp thắc mắc offline, Hỏi đáp trực tuyến, bảo mật….
 Thiết kế website wordpress phù hợp với trang website chuyên về đào tạo khóa học tại trung tâm như trung tâm tiếng anh, tiếng nhật… hoặc các trường đại học có các chương trình đào tạo ngoài ngành như đào tạo thạc sỹ, tiến sỹ, văn bằng 2….. Với mỗi thiết kế website về giáo dục đều mang một phong cách riêng và độc đáo phù hợp với chương trình đào tạo của trường học hay trung tâm.'],
-            ['product_name' => 'Tập Đoàn Hùng Vương', 'product_picture' => 'product9.jpg', 'product_description' => ' Kinh doanh trực tuyến không còn là điều quá mới mẻ trong khi Internet đã phát triển vượt bậc cả về lượng và chất. Việc thiết kế một website bán hàng là điều kiện cần và đủ để khởi nghiệp trên môi trường “ảo” và cũng không mấy khó khăn để làm một website bán hàng. Nhưng để kinh doanh trực tuyến thành công, bạn cần phải có một website bán hàng thật sự chuyên nghiệp, để vượt qua các đối thủ cạnh tranh!
+            ['product_name' => 'Tập Đoàn Hùng Vương', 'product_picture' => 'rsz_product9.jpg', 'product_description' => ' Kinh doanh trực tuyến không còn là điều quá mới mẻ trong khi Internet đã phát triển vượt bậc cả về lượng và chất. Việc thiết kế một website bán hàng là điều kiện cần và đủ để khởi nghiệp trên môi trường “ảo” và cũng không mấy khó khăn để làm một website bán hàng. Nhưng để kinh doanh trực tuyến thành công, bạn cần phải có một website bán hàng thật sự chuyên nghiệp, để vượt qua các đối thủ cạnh tranh!
 Chúng tôi với 7 năm kinh nghiệm trong việc thiet ke web ban hang, chúng tôi đảm bảo sẽ mang đến cho bạn một website đẹp, giá rẻ chất lượng tốt nhất.
 Các sản phẩm website bán hàng của chúng tôi đều được phát triển dựa trên yêu cầu từ thực tiễn và đáp ứng, giải quyết nhanh chóng các vấn đề của khách hàng về quản trị, điều hành hệ thống cũng như kinh doanh các sản phẩm mà khách hàng mong muốn.
 Không chỉ mang lại những giải pháp thiết kế website theo phong cách thiết kế chuyên nghiệp, chúng tôi không ngừng học hỏi, sáng tạo những ý tưởng, luôn đổi mới phong cách phù hợp với quy trình chuẩn hóa quốc tế. Nỗ lực vươn tới vị trí công ty thiết kế website hàng đầu Việt Nam.
@@ -422,7 +422,7 @@ Các chức năng chính của website bán hàng.
 7. Trang liên hệ, bản đồ đến công ty
 8. Trang tin tức
 …..Và một số yêu cầu khác tuỳ vào từng website.'],
-            ['product_name' => 'Website Khoa Học Công Nghệ Thông Tin', 'product_picture' => 'product10.jpg', 'product_description' => 'Thiết kế web trường học cần thể hiện tốt nhất các nhân tố sau:
+            ['product_name' => 'Website Khoa Học Công Nghệ Thông Tin', 'product_picture' => 'rsz_product10.jpg', 'product_description' => 'Thiết kế web trường học cần thể hiện tốt nhất các nhân tố sau:
 •	Màu sắc tươi sáng, vui tươi, năng động và trẻ trung.
 •	Hình ảnh đẹp, tươi sáng, hồn nhiên và mang tính giáo dục.
 •	Nội dung website phải cô đọng, súc tích và giàu biểu cảm.
@@ -455,7 +455,7 @@ Gallery ảnh – Nơi đăng tải những hình ảnh về hoạt động ho�
 7	Video	Cập nhật video hiển trị trên trang chủ.
 8	Quảng Cáo	Quản lý các hình ảnh quảng cáo trên trang. Kích thước các quảng cáo sẽ được thiết kế theo chuẩn thế giới, Trong mục này, người quản trị chỉ việc cập nhật hình ảnh quảng cáo lên trang. Đối với quảng cáo, hệ thống website được xây dựng sẽ hỗ trợ hầu hết phần lớn các chuẩn định dạng về hình ảnh ( jpg, jpeg, png, gif, swf … )
 10	Liên Hệ	Quản lý các thông tin liên hệ được người truy cập gửi qua form liên hệ trên trang chủ. Mội thông tin gửi qua form này sẽ được hiển thị tại đây'],
-            ['product_name' => 'Hệ Thống Liên Kết ĐH UCLand', 'product_picture' => 'product11.jpg', 'product_description' => 'Thiết kế web trường học cần thể hiện tốt nhất các nhân tố sau:
+            ['product_name' => 'Hệ Thống Liên Kết ĐH UCLand', 'product_picture' => 'rsz_product11.jpg', 'product_description' => 'Thiết kế web trường học cần thể hiện tốt nhất các nhân tố sau:
 •	Màu sắc tươi sáng, vui tươi, năng động và trẻ trung.
 •	Hình ảnh đẹp, tươi sáng, hồn nhiên và mang tính giáo dục.
 •	Nội dung website phải cô đọng, súc tích và giàu biểu cảm.
@@ -488,7 +488,7 @@ Gallery ảnh – Nơi đăng tải những hình ảnh về hoạt động ho�
 7	Video	Cập nhật video hiển trị trên trang chủ.
 8	Quảng Cáo	Quản lý các hình ảnh quảng cáo trên trang. Kích thước các quảng cáo sẽ được thiết kế theo chuẩn thế giới, Trong mục này, người quản trị chỉ việc cập nhật hình ảnh quảng cáo lên trang. Đối với quảng cáo, hệ thống website được xây dựng sẽ hỗ trợ hầu hết phần lớn các chuẩn định dạng về hình ảnh ( jpg, jpeg, png, gif, swf … )
 10	Liên Hệ	Quản lý các thông tin liên hệ được người truy cập gửi qua form liên hệ trên trang chủ. Mội thông tin gửi qua form này sẽ được hiển thị tại đây'],
-            ['product_name' => 'Hệ Thống Quản Lý Khoa Hàng', 'product_picture' => 'product12.jpg', 'product_description' => 'Thiết kế web trường học cần thể hiện tốt nhất các nhân tố sau:
+            ['product_name' => 'Hệ Thống Quản Lý Khoa Hàng', 'product_picture' => 'rsz_product12.jpg', 'product_description' => 'Thiết kế web trường học cần thể hiện tốt nhất các nhân tố sau:
 •	Màu sắc tươi sáng, vui tươi, năng động và trẻ trung.
 •	Hình ảnh đẹp, tươi sáng, hồn nhiên và mang tính giáo dục.
 •	Nội dung website phải cô đọng, súc tích và giàu biểu cảm.

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="col-lg-12">
-        {{ link_to_route('admin.document.add', 'them moi san pham', null, ['class' => 'btn btn-primary']) }}
+        {{ link_to_route('admin.document.add', 'Thêm Mới Tài Liệu', null, ['class' => 'btn btn-primary']) }}
     </div>
     <div class="col-lg-12" style="margin-top: 20px;">
         @if(count($documents) > 0)
@@ -15,9 +15,9 @@
                 <table class="table room-table-news">
                     <thead>
                     <tr>
-                        <th style="width: 20%">id</th>
-                        <th style="width: 30%">ten tai lieu</th>
-                        <th style="width: 20%">tai tai lieu</th>
+                        <th style="width: 20%">STT</th>
+                        <th style="width: 30%">Tên Tài Liệu</th>
+                        <th style="width: 20%">DownLoad</th>
                         <th style="width: 30%"></th>
                     </tr>
                     </thead>
@@ -27,10 +27,10 @@
                             <td>{{ $document->id }}</td>
                             <td>{{ $document->name }}</td>
                             <td>
-                                <a class="btn btn-default" href="{{ $document->type }}" download>tai tai lieu</a>
+                                <a class="btn btn-default" href="{{ $document->type }}" download>Download</a>
                             </td>
                             <td>
-                                {{ link_to_route('admin.document.delete', 'xoa tai lieu', $document->id, ['class' => 'btn btn-danger']) }}
+                                {{ link_to_route('admin.document.delete', 'Xóa Tài Liệu', $document->id, ['class' => 'btn btn-danger']) }}
                             </td>
                         </tr>
                     @endforeach
@@ -38,7 +38,7 @@
                 </table>
             </div>
         @else
-            <p class="text-center" colspan="3" style="border: none">chua co tai lieu</p>
+            <p class="text-center" colspan="3" style="border: none">Chưa Có Tài Liệu</p>
         @endif
 
     </div>

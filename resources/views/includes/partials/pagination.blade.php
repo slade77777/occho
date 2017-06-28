@@ -1,7 +1,7 @@
 @if($paging->lastPage() > 1)
     <ul class="pagination">
-        <li><a href="{{ $paging->appends(Request::except('page'))->url(1) }}">最初</a></li>
-        <li><a href="{{ $paging->appends(Request::except('page'))->previousPageUrl() }}">戻る</a></li>
+        <li><a href="{{ $paging->appends(Request::except('page'))->url(1) }}">Trang Đầu</a></li>
+        <li><a href="{{ $paging->appends(Request::except('page'))->previousPageUrl() }}">Lùi</a></li>
         <?php
         $current = $paging->currentPage();
         $lastPage = $paging->lastPage();
@@ -13,7 +13,7 @@
                 <a href="{{$paging->appends(Request::except('page'))->url($i)}}">{{$i}}</a>
             </li>
         @endfor
-        <li><a href="{{$paging->appends(Request::except('page'))->nextPageUrl()}}">次へ</a></li>
-        <li><a href="{{$paging->url($paging->lastPage()) }}">最終</a></li>
+        <li><a href="{{$paging->appends(Request::except('page'))->nextPageUrl()}}">Tiến</a></li>
+        <li><a href="{{$paging->url($paging->lastPage()) }}">Trang Cuối</a></li>
     </ul>
 @endif

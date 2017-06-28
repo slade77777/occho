@@ -5,12 +5,12 @@
 
     <div class="box box-default">
         <div class="box-header with-border">
-            <h3 class="box-title">them san pham</h3>
+            <h3 class="box-title">Thêm Tài Liệu</h3>
         </div><!-- /.box-header -->
 
         <div class="box-body" >
             <div class="col-lg-2">
-                <b>ten tai lieu</b>
+                <b>Tên Tài Liệu</b>
             </div>
             <div class="col-lg-8 form-group">
                 {{ Form::text('name', null, ['class' => 'form-control']) }}
@@ -19,7 +19,7 @@
 
         <div class="box-body">
             <div class="col-lg-2">
-                <b>anh san pham</b>
+                <b>Chọn Tài Liệu</b>
             </div>
 
             <div class="col-lg-2 form-group">
@@ -31,7 +31,7 @@
             <!-- Buttons -->
             <div class="clearfix"></div>
             <div class="pull-left">
-                {{ Form::submit('tao moi', ['class' => 'btn btn-success']) }}
+                {{ Form::submit('Thêm Mới', ['class' => 'btn btn-success']) }}
             </div><!--pull-left-->
 
         </div><!-- /.box-body -->

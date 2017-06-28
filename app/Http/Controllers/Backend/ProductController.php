@@ -46,8 +46,8 @@ class ProductController extends Controller
     {
         $image = $request->file('product_picture');
         $fileImageName = $image->getClientOriginalName();
-        $realPathImage = '/img/product/' . $this->_createUniqueDataName($fileImageName);
-        $image->move(base_path() . '/public/img/product/', $realPathImage);
+        $realPathImage = $this->_createUniqueDataName($fileImageName);
+        $image->move(base_path() . '/public/assets/img/portfolio/', $realPathImage);
         return $realPathImage;
     }
 

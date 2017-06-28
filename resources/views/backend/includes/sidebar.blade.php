@@ -31,7 +31,7 @@
             </li>
 
             <li class="{{ active_class(Active::checkUriPattern('admin/dashboard')) }}">
-                <a href="{{ route('admin.dashboard') }}">
+                <a href="{{ route('admin.order') }}">
                     <i class="fa fa-dashboard"></i>
                     <span>Đặt Hàng</span>
                 </a>

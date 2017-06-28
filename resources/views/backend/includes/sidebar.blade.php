@@ -19,21 +19,21 @@
             <li class="{{ active_class(Active::checkUriPattern('admin/dashboard')) }}">
                 <a href="{{ route('admin.product') }}">
                     <i class="fa fa-dashboard"></i>
-                    <span>sản phẩm</span>
+                    <span>Sản Phẩm</span>
                 </a>
             </li>
 
             <li class="{{ active_class(Active::checkUriPattern('admin/dashboard')) }}">
                 <a href="{{ route('admin.document') }}">
                     <i class="fa fa-dashboard"></i>
-                    <span>tài liệu</span>
+                    <span>Tài Liệu</span>
                 </a>
             </li>
 
             <li class="{{ active_class(Active::checkUriPattern('admin/dashboard')) }}">
                 <a href="{{ route('admin.dashboard') }}">
                     <i class="fa fa-dashboard"></i>
-                    <span>đặt hàng</span>
+                    <span>Đặt Hàng</span>
                 </a>
             </li>
         </ul><!-- /.sidebar-menu -->

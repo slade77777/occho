@@ -59,10 +59,11 @@
 	</div><!-- /headerwrap -->
 
 	<!-- PROCESS SECTION -->
-	<div class="content">
+	<div class="content" style="font-family: Helvetica, Arial, sans-serif;">
     <div class="container">
 		<div>
-      <h4><b>1. Các Loại Ứng Dụng Dịch Vụ</b></h4>
+			
+      <h4 style="font-family: Helvetica, Arial, sans-serif;"><b>1. Các Loại Ứng Dụng Dịch Vụ</b></h4>
 			<p>Thiết Kế và Phát Triển Website</p>
 			<ul>
 				<ol>- Tại nCreation, chúng tôi không chỉ sở hữu một đội ngũ nhân lực chuyên nghiệp trong thi t k , phát triển, và quản lý dự án, mà còn có những kinh nghiệm quý giá và quy trình làm việc linh hoạt có thể đảm bảo chất lượng sản phẩm đạt chuẩn quốc t .  </ol>
@@ -83,7 +84,7 @@
 		</div>
 
 		<div>
-			<h4><b>2. Nền Tảng Kĩ Thuật</b></h4>
+			<h4 style="font-family: Helvetica, Arial, sans-serif;"><b>2. Nền Tảng Kĩ Thuật</b></h4>
 			<p><b>Ngôn Ngữ Lập Trình</b></p>
 			<ul>
 				<ol>- PHP: Symphony, Smarty, Mojavi, Pear, ADODB </ol>
@@ -100,7 +101,7 @@
 			<p><b>Công Cụ Quản Lý</b>:   MSProject, Bug tracker, CVS, SVN, Work tracking, CMS    </p>
 		</div>
 		<div>
-			<h4><b>3.Quy Trình Quản Lý</b></h4>
+			<h4 style="font-family: Helvetica, Arial, sans-serif;"><b>3.Quy Trình Quản Lý</b></h4>
 			<p>Ứng dụng quy trình quản lý Rational Unifield Process (tương đương  MM3) vào trong tất cả các dự án  ông nghệ thông tin của công ty. Ngoài ra việc quản lý k t hợp với các công cụ và quy trình về: </p>
 			<ul>
 				<ol>- Quản lý dự án (MS project), quản lý công việc (Work tracking), quản lý nhân sự (HRM) </ol>
@@ -114,7 +115,7 @@
 
 	<!-- SERVICES SECTION -->
 	<!-- SERVICES SECTION -->
-	<div id="services">
+	<div id="services" style="font-family: Helvetica, Arial, sans-serif;">
 		<div class="container">
 			<div class="row mt">
 				<div class="col-lg-1 centered">
@@ -207,7 +208,7 @@
 						<iframe height="400" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.es/maps?t=m&amp;ie=UTF8&amp;ll=52.752693,22.791016&amp;spn=67.34552,156.972656&amp;z=6&amp;output=embed"></iframe>
 					</div>
 				</div><!--col-lg-8-->
-				<div class="col-lg-4">
+				<div class="col-lg-4" style="font-family: Helvetica, Arial, sans-serif;">
 					<h4>Công Ty Cổ Phần Dịch Vụ Sáng Tạo Mới</h4>
 					<br>
 					<p>

@@ -7,7 +7,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="{{url('assets/ico/favicon.png')}}">
-
     <title>LINK - Agency Theme</title>
 
     <!-- Bootstrap core CSS -->
@@ -49,7 +48,7 @@
 	</nav>
 	
 	<!-- MAIN PROJECT SECTION -->
-	<div id="sp">
+	<div id="sp" style="font-family: Helvetica, Arial, sans-serif;">
 		<div class="container">
 			<div class="row">
 
@@ -66,7 +65,7 @@
 					<p class="alert alert-success">{{ Session::get('alert-success') }} </p>
 				@endif
 			</div> <!-- end .flash-message -->
-	        <h1><b><?php echo $product->product_name ?></b></h1>
+	        <h1 style="font-family: Helvetica, Arial, sans-serif;"><b><?php echo $product->product_name ?></b></h1>
       	</div>
       </div><!-- /row -->
     </div><!-- /.container -->
@@ -85,59 +84,85 @@
 	<div id="lg">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-10 col-lg-offset-2 desc">
-					<h4><b>Mô Tả Sản Phâm</b></h4>
+				<div class="col-lg-10 col-lg-offset-2 desc" style="font-family: Helvetica, Arial, sans-serif;">
+					<h4 ><b>Mô Tả Sản Phâm</b></h4>
 					<p><?php echo $product->product_description ?></p>
 				</div>
 
-				<div class="col-lg-10 col-lg-offset-2 desc">
-					<h4><b>Thông Tin Mua Hàng</b></h4>
-					<form class="form-horizontal" method="post" action="{{url('/send_order')}}">
-						<input type="hidden" name="_token" value="{{csrf_token()}}" />
-						<input type="hidden" name="product_id" value="<?php echo $product->id ?>" />
+				<button  class="button_order_table" onclick="createUnitModal('<?php echo $product->id ?>')"><i class="fa fa-check-circle"></i>Liên Hệ Mua Hàng</button>
 
-						<div class="form-group">
-							<label for="inputEmail3" class="col-sm-2 control-label">Tên Người Mua</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" name="name" id="inputEmail3" placeholder="Vui Lòng Nhập Tên" required="required">
-							</div>
-						</div>
+                <div id="createUnitModal" class="modal fade" role='dialog'>
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+								<h4 class="modal-title">Liên Hệ Mua Hàng: </h4><div class="row">
+                            </div>
+                            <div class="modal-body">
 
-						<div class="form-group">
-							<label for="inputEmail3" class="col-sm-2 control-label">Email Người Mua</label>
-							<div class="col-sm-10">
-								<input type="email" class="form-control" id="inputEmail3" name="email" placeholder="Vui Lòng Nhập Email" required="required">
-							</div>
-						</div>
+									<form class="form-horizontal" method="post" action="{{url('/send_order')}}">
+										<input type="hidden" name="_token" value="{{csrf_token()}}" />
+										<input type="hidden" name="product_id" value="<?php echo $product->id ?>" />
 
-						<div class="form-group">
-							<label for="inputPassword3" class="col-sm-2 control-label">Số Điện Thoại</label>
-							<div class="col-sm-10">
-								<input type="text" class="form-control" id="inputPassword3" name="phone" placeholder="Vui Lòng Nhập Số Điện Thoại" required="required">
-							</div>
-						</div>
+										<div class="form-group">
+											<label for="inputEmail3" class="col-sm-2 control-label">Tên:</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" name="name" id="inputEmail3" placeholder="Vui Lòng Nhập Tên" required="required">
+											</div>
+										</div>
 
-						<div class="form-group">
-							<label for="inputPassword3" class="col-sm-2 control-label">Mô Tả</label>
-							<div class="col-sm-10">
-								<textarea class="form-control" rows="5" name="description" placeholder="Vui Lòng Nhập Mô Tả"></textarea>
-							</div>
-						</div>
+										<div class="form-group">
+											<label for="inputEmail3" class="col-sm-2 control-label">Email:</label>
+											<div class="col-sm-10">
+												<input type="email" class="form-control" id="inputEmail3" name="email" placeholder="Vui Lòng Nhập Email" required="required">
+											</div>
+										</div>
 
-						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-								<input type="submit" name="ok" value="Gửi" />
-							</div>
-						</div>
-					</form>
-				</div>
-			</div><!-- row -->
-		</div><!-- container -->
-	</div><!-- dg -->
+										<div class="form-group">
+											<label for="inputPassword3" class="col-sm-2 control-label">SĐT:</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" id="inputPassword3" name="phone" placeholder="Vui Lòng Nhập Số Điện Thoại" required="required">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="inputPassword3" class="col-sm-2 control-label">Mô Tả</label>
+											<div class="col-sm-10">
+												<textarea class="form-control" rows="5" name="description" placeholder="Vui Lòng Nhập Mô Tả"></textarea>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="col-sm-offset-2 col-sm-10">
+												<input type="submit" name="ok" value="Gửi" />
+											</div>
+										</div>
+									</form>
+								</div>
+							</div><!-- row -->
+						</div><!-- container -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    function createUnitModal(id){
+                        $('#createUnitModal').modal();
+                    }
+                    function saveData(id){
+                        $('#createUnitModal').modal('hide');
+                    }
+                </script>
+
 
 
 	<!-- SINGLE PROJECT STANDOUT IMAGE -->
-	<div id="services">
+	<div id="services" style="font-family: Helvetica, Arial, sans-serif;">
 		<div class="container">
 			<div class="row mt">
 				<div class="col-lg-1 centered">
@@ -230,7 +255,7 @@
 						<iframe height="400" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.es/maps?t=m&amp;ie=UTF8&amp;ll=52.752693,22.791016&amp;spn=67.34552,156.972656&amp;z=6&amp;output=embed"></iframe>
 					</div>
 				</div><!--col-lg-8-->
-				<div class="col-lg-4">
+				<div class="col-lg-4" style="font-family: Helvetica, Arial, sans-serif;">
 					<h4>Công Ty Cổ Phần Dịch Vụ Sáng Tạo Mới</h4>
 					<br>
 					<p>

@@ -7,7 +7,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
-
+	<style>
+		body {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+	</style>
     <title>CREATION</title>
 
     <!-- Bootstrap core CSS -->
@@ -60,7 +64,7 @@
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 					<h1><img src="assets/img/logo.png" alt="Mountain View" style="width:304px;height:150px;"></h1>
-					<h2><b>Công Ty Cổ Phần Dịch Vụ Sáng Tạo Mới</b></h2>
+					<h2 style="font-family: Helvetica, Arial, sans-serif;"><b>Công Ty Cổ Phần Dịch Vụ Sáng Tạo Mới</b></h2>
 					<div class="spacer"></div>
 					<i class="fa fa-angle-down"></i>
 				</div>
@@ -72,7 +76,7 @@
     <div class="container">
       <div class="row mt">
       	<div class="col-lg-8">
-	        <h1>Chúng Tôi Luôn Cung Cấp Sự Đổi Mới, Sáng Tạo và Các Sản Phẩm Dịch Vụ Công Nghệ Mới</h1>
+	        <h1 style="font-family: Helvetica, Arial, sans-serif;" >Chúng Tôi Luôn Cung Cấp Sự Đổi Mới, Sáng Tạo và Các Sản Phẩm Dịch Vụ Công Nghệ Mới</h1>
 
       	</div>
       	<div class="col-lg-4">
@@ -82,7 +86,7 @@
     </div><!-- /.container -->
     
     <!-- PORTFOLIO SECTION -->
-    <div id="portfolio" style="background: white;">
+    <div id="portfolio" style="background: white;font-family: Helvetica, Arial, sans-serif;">
     	<div class="container">
 	    	<div class="row mt">
 				<ul class="grid effect-2" id="grid">
@@ -100,13 +104,13 @@
 
 
 	<!-- SERVICES SECTION -->
-	<div id="services">
+	<div id="services" style="font-family: Helvetica, Arial, sans-serif;">
 		<div class="container">
 			<div class="row mt">
 				<div class="col-lg-1 centered">
 					<i class="fa fa-certificate"></i>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3" >
 					<h3>Chất Lượng Sản Phẩm</h3>
 					<p>Chúng Tôi Luôn Luôn Hướng Tới Và Cam Kết Sẽ Mang Đến Một Chất Lượng Sản Phẩm Tốt Nhất Đến Khách Hàng.</p>
 				</div>
@@ -193,7 +197,7 @@
 						<iframe height="400" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.es/maps?t=m&amp;ie=UTF8&amp;ll=52.752693,22.791016&amp;spn=67.34552,156.972656&amp;z=6&amp;output=embed"></iframe>
 					</div>	
 				</div><!--col-lg-8-->
-				<div class="col-lg-4">
+				<div class="col-lg-4" style="font-family: Helvetica, Arial, sans-serif;">
 					<h4>Công Ty Cổ Phần Dịch Vụ Sáng Tạo Mới</h4>
 					<br>
 					<p>

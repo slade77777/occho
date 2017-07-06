@@ -23,6 +23,10 @@ class FrontendController extends Controller
         return view('frontend.services');
     }
 
+    public function material() {
+        $documents = DB::table('documents')->get();
+        return view('frontend.material',['documents' => $documents]);
+    }
 
     public function single($id) {
         $product = DB::table('products')->where('id',$id)->get()->first();

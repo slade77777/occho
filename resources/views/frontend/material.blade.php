@@ -85,6 +85,120 @@
     </table>
 </div>
 
+<div id="services" style="font-family: Helvetica, Arial, sans-serif;">
+    <div class="container">
+        <div class="row mt">
+            <div class="col-lg-1 centered">
+                <i class="fa fa-certificate"></i>
+            </div>
+            <div class="col-lg-3">
+                <h3>Chất Lượng Sản Phẩm</h3>
+                <p>Chúng Tôi Luôn Luôn Hướng Tới Và Cam Kết Sẽ Mang Đến Một Chất Lượng Sản Phẩm Tốt Nhất Đến Khách Hàng.</p>
+            </div>
+
+            <div class="col-lg-1 centered">
+                <i class="fa fa-question-circle"></i>
+            </div>
+            <div class="col-lg-3">
+                <h3>Hỗ Trợ Tận Tình</h3>
+                <p>Đội Ngũ Hỗ Trợ Và Giải Quyết Mọi Vấn Đề Khó Khăn Của Khách Hàng Mọi Lúc Mọi Nơi.</p>
+            </div>
+
+
+            <div class="col-lg-1 centered">
+                <i class="fa fa-globe"></i>
+            </div>
+            <div class="col-lg-3">
+                <h3>Dịch Vụ Toàn Cầu</h3>
+                <p>Với Sức Mạnh Công Nghệ Đột Phá.Chúng Tôi Mang Đến Một Dịch Vụ Trên Toàn Thế Giới.</p>
+            </div>
+
+        </div><!-- row -->
+    </div><!-- container -->
+</div><!-- services section -->
+
+
+<!-- CLIENTS LOGOS -->
+<div id="lg" style="background: white;">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-lg-2 col-lg-offset-1">
+                <img src="assets/img/clients/rsz_intel.png" alt="">
+            </div>
+            <div class="col-lg-2">
+                <img src="assets/img/clients/rsz_kocom.jpg" alt="">
+            </div>
+            <div class="col-lg-2">
+                <img src="assets/img/clients/rsz_microengine.png" alt="">
+            </div>
+            <div class="col-lg-2">
+                <img src="assets/img/clients/rsz_panasonic.png" alt="">
+            </div>
+            <div class="col-lg-2">
+                <img src="assets/img/clients/rsz_sony.jpg" alt="">
+            </div>
+        </div><!-- row -->
+    </div><!-- container -->
+</div><!-- dg -->
+
+
+
+
+
+<!-- SOCIAL FOOTER --->
+<section id="contact"></section>
+<div id="sf">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 dg">
+                <h4 class="ml">FACEBOOK</h4>
+                <p class="centered"><a href="#"><i class="fa fa-facebook"></i></a></p>
+                <p class="ml">> Become A Friend</p>
+            </div>
+            <div class="col-lg-4 lg">
+                <h4 class="ml">TWITTER</h4>
+                <p class="centered"><a href="#"><i class="fa fa-twitter"></i></a></p>
+                <p class="ml">> Follow Us</p>
+            </div>
+            <div class="col-lg-4 dg">
+                <h4 class="ml">GOOGLE +</h4>
+                <p class="centered"><a href="#"><i class="fa fa-google-plus"></i></a></p>
+                <p class="ml">> Add Us To Your Circle</p>
+            </div>
+        </div><!-- row -->
+    </div><!-- container -->
+</div><!-- Social Footer -->
+
+<!-- CONTACT FOOTER --->
+<div id="cf">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div id="mapwrap">
+                    <iframe height="400" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.es/maps?t=m&amp;ie=UTF8&amp;ll=52.752693,22.791016&amp;spn=67.34552,156.972656&amp;z=6&amp;output=embed"></iframe>
+                </div>
+            </div><!--col-lg-8-->
+            <div class="col-lg-4" style="font-family: Helvetica, Arial, sans-serif;">
+                <h4>Công Ty Cổ Phần Dịch Vụ Sáng Tạo Mới</h4>
+                <br>
+                <p>
+                    Số 20 Nhuệ Giang, Phường Nguyễn Trãi, Quận Hà Đông<br/>
+                    Thành Phố Hà Nội
+                </p>
+                <p>
+                    P: 04.66753319<br/>
+                    <br/>
+                    E: <a href="mailto:#">info@ncvietnam.com</a><br>
+                    W: <a href="mailto:#">www.ncvietnam.com</a>
+                </p>
+            </div><!--col-lg-4-->
+        </div><!-- row -->
+    </div><!-- container -->
+</div><!-- Contact Footer -->
+
+
+
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->

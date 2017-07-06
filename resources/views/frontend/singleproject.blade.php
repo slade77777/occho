@@ -40,6 +40,8 @@
 			<a href="{{ url('/home') }}">Home</a>
 			<a href="{{ url('/service') }}">Services</a>
 			<a href="{{ url('/about') }}">About</a>
+			<a href="{{ url('/material') }}">Material</a>
+
 			<a href="#contact">Contact</a>
 		</div>
 

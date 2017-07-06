@@ -41,6 +41,8 @@
 			<a href="{{ url('/home') }}">Home</a>
 			<a href="{{ url('/service') }}">Services</a>
 			<a href="{{ url('/about') }}">About</a>
+			<a href="{{ url('/material') }}">Material</a>
+
 			<a href="#contact">Contact</a>
 		</div>
 
@@ -129,7 +131,29 @@
 			</div>
 		</div><!-- row -->
 	</div><!-- container -->
-
+	<div class="col-lg-12 table-responsive">
+		<h4><b>Tài Liệu Công Ty</b></h4>
+		<table class="table room-table-news">
+			<thead>
+			<tr>
+				<th style="width: 20%">STT</th>
+				<th style="width: 30%">Tên Tài Liệu</th>
+				<th style="width: 20%">Download</th>
+				<th style="width: 30%"></th>
+			</tr>
+			</thead>
+			<tbody>
+			@foreach($documents as $document)
+				<tr>
+					<td>{{ $document->id }}</td>
+					<td>{{ $document->name }}</td>
+					<td>
+						<a class="btn btn-default" href="{{ $document->type }}" download>Download</a>
+				</tr>
+			@endforeach
+			</tbody>
+		</table>
+	</div>
 	
 	
 	

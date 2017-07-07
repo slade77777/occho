@@ -76,7 +76,7 @@
 	<div class="container">
 		<div class="row centered">
 			<div class="col-lg-12">
-				<img style="width: 100%" class="img-responsive" src="{{url('assets/img/portfolio/'.$product->product_picture)}}" alt="Spot Theme">
+				<img style="padding: 13px 170px;" class="img-responsive" src="{{url('assets/img/portfolio/'.$product->product_picture)}}" alt="Spot Theme">
 			</div>
 		</div>
 	</div>
@@ -165,12 +165,12 @@
 		<div class="container">
 			<div class="row mt centered">
 				<div class="col-lg-8 col-lg-offset-2">
-					<h1>More Information</h1>
+					<h1>Thông Tin Khác</h1>
 					<ul class="process effect-2" id="process">
-						<li><img src="{{ url('assets/img/p01.png') }}"></li>
-						<li><img src="{{ url('assets/img/p02.png') }}"></li>
-						<li><img src="{{ url('assets/img/p03.png') }}"></li>
-						<li><img src="{{ url('assets/img/p04.png') }}"></li>
+						<li style="padding:20px 0;"><img src="{{ url('assets/img/portfolio/rsz_product1.jpg') }}"></li>
+						<li style="padding:20px 0;"><img src="{{ url('assets/img/portfolio/rsz_product2.jpg') }}"></li>
+						<li style="padding:20px 0;"><img src="{{ url('assets/img/portfolio/rsz_product3.jpg') }}"></li>
+						<li style="padding:20px 0;"><img src="{{ url('assets/img/portfolio/rsz_product4.jpg') }}"></li>
 					</ul>
 				</div><!-- col-lg-8 -->
 			</div><!-- row -->

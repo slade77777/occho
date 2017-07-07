@@ -63,26 +63,19 @@
 
 <div class="col-lg-12 table-responsive">
     <h4><b>Tài Liệu Công Ty</b></h4>
-    <table class="table room-table-news">
-        <thead>
-        <tr>
-            <th style="width: 20%">STT</th>
-            <th style="width: 30%">Tên Tài Liệu</th>
-            <th style="width: 20%">Download</th>
-            <th style="width: 30%"></th>
-        </tr>
-        </thead>
-        <tbody>
+</div>
+
+<div class="container">
+    <div class="row mt">
         @foreach($documents as $document)
-            <tr>
-                <td>{{ $document->id }}</td>
-                <td>{{ $document->name }}</td>
-                <td>
-                    <a class="btn btn-default" href="{{ $document->type }}" download>Download</a>
-            </tr>
+            <div class="col-lg-4" style="background: url('{{ url('assets/img/docs.jpg') }}') no-repeat center top; height: 300px; margin-top: 30px">
+                <div style="margin-left: 30%; margin-top: 50px;max-width: 100px;word-break: break-all;text-align: center">
+                    <b>{{ $document->name }}</b>
+                </div>
+                <a style="margin-left: 37%; margin-top: 130px" class="btn btn-default" href="{{ $document->type }}" download>Tải tài liệu</a>
+            </div>
         @endforeach
-        </tbody>
-    </table>
+    </div>
 </div>
 
 <div id="services" style="font-family: Helvetica, Arial, sans-serif;">

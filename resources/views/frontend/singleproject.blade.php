@@ -76,7 +76,7 @@
 	<div class="container">
 		<div class="row centered">
 			<div class="col-lg-12">
-				<img class="img-responsive" src="{{url('assets/img/portfolio/'.$product->product_picture)}}" alt="Spot Theme">
+				<img style="width: 100%" class="img-responsive" src="{{url('assets/img/portfolio/'.$product->product_picture)}}" alt="Spot Theme">
 			</div>
 		</div>
 	</div>
@@ -86,7 +86,7 @@
 	<div id="lg">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-10 col-lg-offset-2 desc" style="font-family: Helvetica, Arial, sans-serif;">
+				<div class="col-lg-12 desc" style="font-family: Helvetica, Arial, sans-serif;">
 					<h4 ><b>Mô Tả Sản Phâm</b></h4>
 					<p><?php echo $product->product_description ?></p>
 				</div>

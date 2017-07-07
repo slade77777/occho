@@ -75,7 +75,7 @@
     <!-- MAC IMAGE -->
 	<div class="container">
 		<div class="row centered">
-			<div class="col-lg-10 col-lg-offset-2">
+			<div class="col-lg-12">
 				<img class="img-responsive" src="{{url('assets/img/portfolio/'.$product->product_picture)}}" alt="Spot Theme">
 			</div>
 		</div>
@@ -151,6 +151,7 @@
                         </div>
                     </div>
                 </div>
+	</div>
 
                 <script type="text/javascript">
                     function createUnitModal(id){
@@ -161,7 +162,19 @@
                     }
                 </script>
 
-
+		<div class="container">
+			<div class="row mt centered">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h1>More Information</h1>
+					<ul class="process effect-2" id="process">
+						<li><img src="{{ url('assets/img/p01.png') }}"></li>
+						<li><img src="{{ url('assets/img/p02.png') }}"></li>
+						<li><img src="{{ url('assets/img/p03.png') }}"></li>
+						<li><img src="{{ url('assets/img/p04.png') }}"></li>
+					</ul>
+				</div><!-- col-lg-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
 
 	<!-- SINGLE PROJECT STANDOUT IMAGE -->
 	<div id="services" style="font-family: Helvetica, Arial, sans-serif;">

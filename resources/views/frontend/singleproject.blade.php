@@ -41,6 +41,7 @@
 			<a href="{{ url('/service') }}">Services</a>
 			<a href="{{ url('/about') }}">About</a>
 			<a href="{{ url('/material') }}">Material</a>
+			<a href="{{ url('/customer') }}">Customer</a>
 
 			<a href="#contact">Contact</a>
 		</div>

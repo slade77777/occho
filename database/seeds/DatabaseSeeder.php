@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         $this->call(HistoryTypeTableSeeder::class);
         $this->call(ProductTableSeeder::class);
         $this->call(DocumentTableSeeder::class);
+        $this->call(CustomerTableSeeder::class);
         Model::reguard();
     }
 }

@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+        <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -7,8 +8,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
-
-    <title>LINK - Agency Theme</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+    </style>
+    <title>CREATION</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -28,11 +33,17 @@
     <![endif]-->
 
     <script src="assets/js/modernizr.custom.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            var load_screen = document.getElementById("load_screen");
+            document.body.removeChild(load_screen);
+        });
+    </script>
 
 </head>
 
 <body>
-
+<div id="load_screen"><div id="loading">&nbsp;</div></div>
 <!-- Menu -->
 <nav class="menu" id="theMenu">
     <div class="menu-wrap">
@@ -43,7 +54,6 @@
         <a href="{{ url('/about') }}">About</a>
         <a href="{{ url('/material') }}">Material</a>
         <a href="{{ url('/customer') }}">Customer</a>
-
         <a href="#contact">Contact</a>
     </div>
 
@@ -52,40 +62,59 @@
 </nav>
 
 <!-- MAIN IMAGE SECTION -->
-<div id="aboutwrap" style="background-image: url({{ url('assets/img/aaa.jpg') }})">
+<div id="headerwrap">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-
+                <h1><img src="assets/img/logo.png" alt="Mountain View" style="width:304px;height:150px;"></h1>
+                <h2 style="font-family: Helvetica, Arial, sans-serif;"><b>Công Ty Cổ Phần Dịch Vụ Sáng Tạo Mới</b></h2>
+                <div class="spacer"></div>
+                <i class="fa fa-angle-down"></i>
             </div>
         </div><!-- row -->
     </div><!-- /container -->
-</div><!-- /aboutwrap -->
+</div><!-- /headerwrap -->
 
-<div class="col-lg-12 table-responsive">
-    <h4><b>Tài Liệu Công Ty</b></h4>
-</div>
-
+<!-- WELCOME SECTION -->
 <div class="container">
     <div class="row mt">
-        @foreach($documents as $document)
-            <div class="col-lg-4" style="background: url('{{ url('assets/img/docs.jpg') }}') no-repeat center top; height: 300px; margin-top: 30px">
-                <div style="margin-left: 30%; margin-top: 50px;max-width: 100px;word-break: break-all;text-align: center">
-                    <b>{{ $document->name }}</b>
-                </div>
-                <a style="margin-left: 37%; margin-top: 130px" class="btn btn-default" href="{{ $document->type }}" download>Tải tài liệu</a>
-            </div>
-        @endforeach
-    </div>
-</div>
+        <div class="col-lg-8">
+            <h1 style="font-family: Helvetica, Arial, sans-serif;" >Chúng Tôi Luôn Cung Cấp Sự Đổi Mới, Sáng Tạo và Các Sản Phẩm Dịch Vụ Công Nghệ Mới</h1>
 
+        </div>
+        <div class="col-lg-4">
+
+        </div>
+    </div><!-- /row -->
+</div><!-- /.container -->
+
+<!-- PORTFOLIO SECTION -->
+<div id="portfolio" style="background: white;font-family: Helvetica, Arial, sans-serif;">
+    <div class="container">
+        <div class="row mt">
+            <ul class="grid effect-2" id="grid">
+                <?php
+                foreach($customer as $item) {
+                ?>
+                <li><a href="{{url('/single/'.$item->product_id)}}"><div><img src="assets/customers/<?php echo $item->customer_picture ?>" width="150px" height="150px" /><p><?php echo $item->customer_name ?></p></div>
+                    </a></li>
+                <?php
+                }
+                ?>
+            </ul>
+        </div><!-- row -->
+    </div><!-- container -->
+</div><!-- portfolio -->
+
+
+<!-- SERVICES SECTION -->
 <div id="services" style="font-family: Helvetica, Arial, sans-serif;">
     <div class="container">
         <div class="row mt">
             <div class="col-lg-1 centered">
                 <i class="fa fa-certificate"></i>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3" >
                 <h3>Chất Lượng Sản Phẩm</h3>
                 <p>Chúng Tôi Luôn Luôn Hướng Tới Và Cam Kết Sẽ Mang Đến Một Chất Lượng Sản Phẩm Tốt Nhất Đến Khách Hàng.</p>
             </div>
@@ -191,14 +220,22 @@
 </div><!-- Contact Footer -->
 
 
-
-
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/masonry.pkgd.min.js"></script>
+<script src="assets/js/imagesloaded.js"></script>
 <script src="assets/js/classie.js"></script>
+<script src="assets/js/AnimOnScroll.js"></script>
+<script>
+    new AnimOnScroll( document.getElementById( 'grid' ), {
+        minDuration : 0.4,
+        maxDuration : 0.7,
+        viewportFactor : 0.2
+    } );
+</script>
 </body>
 </html>

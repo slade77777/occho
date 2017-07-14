@@ -15,8 +15,13 @@ class FrontendController extends Controller
      */
     public function index()
     {
-        $product = DB::table('products')->get();
+        $product = DB::table('products')->join('customers', 'products.customer_id', '=', 'customers.id')->get();
         return view('frontend.home',['product' => $product]);
+    }
+
+    public function customer() {
+        $customer = DB::table('customers')->join('products', 'products.id', '=', 'customers.product_id')->get();
+        return view('frontend.customer', ['customer' => $customer]);
     }
 
     public function service() {

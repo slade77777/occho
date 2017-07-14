@@ -9,7 +9,7 @@ Route::get('/home','FrontendController@index');
 Route::get('/service','FrontendController@service');
 Route::get('/about','FrontendController@about');
 Route::get('/material','FrontendController@material');
-
+Route::get('/customer','FrontendController@customer');
 Route::get('/single/{id}','FrontendController@single');
 
 Route::post('/send_order','FrontendController@send_order');

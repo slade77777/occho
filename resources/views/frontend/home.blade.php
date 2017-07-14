@@ -1,3 +1,6 @@
+<?php
+	use Illuminate\Support\Facades\DB;
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,6 +55,7 @@
 			<a href="{{ url('/service') }}">Services</a>
 			<a href="{{ url('/about') }}">About</a>
 			<a href="{{ url('/material') }}">Material</a>
+			<a href="{{ url('/customer') }}">Customer</a>
 			<a href="#contact">Contact</a>
 		</div>
 		
@@ -85,7 +89,7 @@
       	</div>
       </div><!-- /row -->
     </div><!-- /.container -->
-    
+
     <!-- PORTFOLIO SECTION -->
     <div id="portfolio" style="background: white;font-family: Helvetica, Arial, sans-serif;">
     	<div class="container">
@@ -94,7 +98,8 @@
 					<?php
 						foreach($product as $item) {
 						    ?>
-						<li><a href="{{url('/single/'.$item->id)}}"><div><img src="assets/img/portfolio/<?php echo $item->product_picture ?>"><p><?php echo $item->product_name ?></p></div></a></li>
+						<li><a href="{{url('/single/'.$item->id)}}"><div><img src="assets/img/portfolio/<?php echo $item->product_picture ?>"><p><?php echo $item->product_name ?></p><p>Khách Hàng:<?php echo $item->customer_name ?></p></div>
+							</a></li>
 					<?php
 						}
 					?>

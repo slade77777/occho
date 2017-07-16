@@ -20,7 +20,7 @@ class FrontendController extends Controller
     }
 
     public function customer() {
-        $customer = DB::table('customers')->join('products', 'products.id', '=', 'customers.product_id')->get();
+        $customer = DB::table('customers')->where('id','>',1)->get();
         return view('frontend.customer', ['customer' => $customer]);
     }
 
